@@ -15,7 +15,7 @@
    <node pkg="vl53_pointcloud_pkg" type="vl53_range_ptcld_lut.py" name="vl53_range_ptcld_lut_1" output="screen"/>
  
     
-    <node pkg="tf" type="static_transform_publisher" name="vl53_to_frame" args="0.0 0.0 0.0 0 0 0 fixed_frame map 30" />
+    <node pkg="tf2_ros" type="static_transform_publisher" name="vl53link_publisher" args="0.0 0.0 1.0 0 3.5 0 fixed_frame map " />
     <node pkg="rviz" type="rviz" name="rviz" args="-d $(arg rviz_config_file)"/>
 
     </launch>
