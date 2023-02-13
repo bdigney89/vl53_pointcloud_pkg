@@ -43,20 +43,21 @@ class vl53_get_ptcl:
         fov = np.pi/4.0
         half_fov = fov/2.0
         resolution = 8.0
-        delta_fov = half_fov/(7.0)
+        #delta_fov = half_fov/(7.0)
+        delta_fov = (np.pi/2.)/(7.0)
 
         for h in range(lim):
             for w in range(lim):
-                vec_magnitude = temp.data[h*lim+w]/1000.   # in meters
+                vec_magnitude = temp.data[w*lim+h]/1000.   # in meters
                
                 theta = -fov + w*delta_fov
                 alpha = -fov + h*delta_fov
-                x =  vec_magnitude*(np.sin(alpha))
+                x =  vec_magnitude *(np.sin(alpha))
                 y =  vec_magnitude *(np.cos(alpha)*np.cos(theta))
-                z = vec_magnitude *(np.cos(alpha)*np.sin(theta))
-                r = int(200)  #(x * 255.0) # why not add colour
-                g = int(200)  #y * 255.0)
-                b = int(200)  #z * 255.0)
+                z =  vec_magnitude *(np.cos(alpha)*np.sin(theta))
+                r = int(250)  #(x * 255.0) # why not add colour
+                g = int(250)  #y * 255.0)
+                b = int(250)  #z * 255.0)
                 a = 255
                 rgb = struct.unpack('I', struct.pack('BBBB', b, g, r, a))[0]
                 pt = [x, y, z, rgb]
