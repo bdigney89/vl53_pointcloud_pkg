@@ -1,0 +1,34 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/bdigney/ros_n_nav_sandbox/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/bdigney/ros_n_nav_sandbox/src/VL53_passthru_pkg/include/**",
+        "/home/bdigney/ros_n_nav_sandbox/src/gps_umd/gps_common/include/**",
+        "/home/bdigney/ros_n_nav_sandbox/src/imu_tools/imu_complementary_filter/include/**",
+        "/home/bdigney/ros_n_nav_sandbox/src/imu_tools/imu_filter_madgwick/include/**",
+        "/home/bdigney/ros_n_nav_sandbox/src/laser_proc/include/**",
+        "/home/bdigney/ros_n_nav_sandbox/src/node_and_more_pkg/include/**",
+        "/home/bdigney/ros_n_nav_sandbox/src/robot_pose_ekf/include/**",
+        "/home/bdigney/ros_n_nav_sandbox/src/ros_imu_bno055/include/**",
+        "/home/bdigney/ros_n_nav_sandbox/src/rosserial/rosserial_server/include/**",
+        "/home/bdigney/ros_n_nav_sandbox/src/rosserial/rosserial_test/include/**",
+        "/home/bdigney/ros_n_nav_sandbox/src/simple_move_pkg/include/**",
+        "/home/bdigney/ros_n_nav_sandbox/src/twist_mux/include/**",
+        "/home/bdigney/ros_n_nav_sandbox/src/vl53_pointcloud_pkg/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
